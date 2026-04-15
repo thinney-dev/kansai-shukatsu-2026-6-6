@@ -47,7 +47,6 @@ const CompaniesSection = () => {
       id: 1, 
       name: "PwCコンサルティング", 
       tags: ["戦略コンサル", "外資系"], 
-      // ▼ 修正：ロゴ画像を削除し、テキストロゴと注記を追加 ▼
       textLogo: "PwC",
       logoSubText: "※ロゴ申請中",
       url: "https://www.pwc.com/jp/ja/about-us/member/consulting.html",
@@ -59,12 +58,17 @@ const CompaniesSection = () => {
           { label: "成長環境", value: "若手からCxOアジェンダに切り込む" },
           { label: "求める人材像", value: "高度な論理的思考力を持つトップ学生" }
         ],
-        strength: "PwCのグローバルネットワークにおいて、最上流の戦略コンサルティングを担うのが『PwC Strategy&』です。世界最古の戦略ファームである旧ブーズ・アンド・カンパニーのDNAを受け継ぎ、全社戦略、事業ポートフォリオ変革、プレM&A戦略といったCxO（経営層）の最重要アジェンダに向き合います。最大の強みは、描いた戦略を机上の空論で終わらせず、PwCが擁する多様な専門家チームと連携し、確実な実行と成果創出（Strategy to Execution）まで導き切る点にあります。複雑なビジネス課題を紐解く圧倒的な思考力と、完遂力を併せ持つ優秀な学生にとって、極めてエキサイティングで成長角度の高い環境です。"
+        strength: "PwCのグローバルネットワークにおいて、最上流の戦略コンサルティングを担うのが『PwC Strategy&』です。世界最古の戦略ファームである旧ブーズ・アンド・カンパニーのDNAを受け継ぎ、全社戦略、事業ポートフォリオ変革、プレM&A戦略といったCxO（経営層）の最重要アジェンダに向き合います。最大の強みは, 描いた戦略を机上の空論で終わらせず、PwCが擁する多様な専門家チームと連携し、確実な実行と成果創出（Strategy to Execution）まで導き切る点にあります。複雑なビジネス課題を紐解く圧倒的な思考力と、完遂力を併せ持つ優秀な学生にとって、極めてエキサイティングで成長角度の高い環境です。"
       }
     },
     { 
       id: 2, 
-      name: "デロイトトーマツ", 
+      // ▼▼▼ 修正箇所：nameをJSX形式にして改行を追加 ▼▼▼
+      name: (
+        <>
+          デロイトトーマツ<br />ベンチャーサポート
+        </>
+      ), 
       tags: ["総合コンサル", "BIG4"], 
       logoImage: "/logo-delo.png",
       url: "https://www2.deloitte.com/jp/ja.html",
@@ -114,7 +118,7 @@ const CompaniesSection = () => {
       }
     },
     {
-      id: 4,
+      id: 5,
       name: "損害保険ジャパン",
       tags: ["保険", "損保"],
       logoImage: "/logo-損保.png",
@@ -166,10 +170,9 @@ const CompaniesSection = () => {
             <button
               key={company.id} 
               onClick={() => openModal(company)}
-              className="bg-white rounded-xl border border-slate-200 p-4 flex flex-col items-center justify-center gap-3 md:gap-4 shadow-sm hover:shadow-md transition-all h-44 md:h-48 w-full cursor-pointer group overflow-hidden focus:outline-none focus:ring-2 focus:ring-[#B8860B]/50"
+              className="bg-white rounded-xl border border-slate-200 p-4 flex flex-col items-center justify-center gap-3 md:gap-4 shadow-sm hover:shadow-md transition-all min-h-44 md:min-h-48 w-full cursor-pointer group overflow-hidden focus:outline-none focus:ring-2 focus:ring-[#B8860B]/50"
             >
               <div className="w-full h-14 md:h-16 flex items-center justify-center px-2">
-                {/* ▼ 修正：画像がある場合と、テキストロゴがある場合の分岐を追加 ▼ */}
                 {company.logoImage ? (
                   <img 
                     src={company.logoImage} 
@@ -200,7 +203,8 @@ const CompaniesSection = () => {
                         </span>
                     ))}
                  </div>
-                 <p className="text-xs md:text-sm font-bold text-slate-600 mt-1 truncate w-full">
+                 {/* ▼▼▼ 修正箇所：改行を許可し、2行まで表示するスタイルに変更 ▼▼▼ */}
+                 <p className="text-[11px] md:text-sm font-bold text-slate-600 mt-1 w-full leading-tight break-words whitespace-normal text-center line-clamp-2 md:line-clamp-none min-h-[2.2rem] md:min-h-0 px-1">
                     {company.name}
                  </p>
               </div>
@@ -233,7 +237,6 @@ const CompaniesSection = () => {
                   </button>
                   
                   <div className="h-12 md:h-16 w-full max-w-[80%] flex justify-center items-center mb-3">
-                    {/* ▼ 修正：モーダル内も同様に分岐を追加 ▼ */}
                     {selectedCompany.logoImage ? (
                       <img 
                         src={selectedCompany.logoImage} 
