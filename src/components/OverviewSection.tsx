@@ -4,16 +4,16 @@ const OverviewSection = () => {
   const overviewItems = [
     {
       label: "開催日時",
-      content: "2026/06/17 (水) 13:00 ~ 18:45"
+      content: "2026/06/17 (水) 13:00 ~ 19:15"
     },
     {
       label: "開催場所",
       content: (
         <div className="space-y-4">
           <div>
-            <p className="font-bold mb-1">グランフロント大阪北館タワーＢ10階　RoomＢ02</p>
+            <p className="font-bold mb-1">グランフロント大阪北館タワーＢ10階　RoomＢ01, 02</p>
             <p className="text-sm text-slate-500">
-              〒530-0013 大阪府大阪市北区梅田3-2-1 グランフロント大阪北館タワーＢ10階　Room B02
+              〒530-0013 大阪府大阪市北区梅田3-2-1 グランフロント大阪北館タワーＢ10階　Room B01, 02
             </p>
             <p className="text-xs text-[#B8860B] mt-1 flex items-center gap-1 font-bold">
               <MapPin className="w-3 h-3" />

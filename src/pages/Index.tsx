@@ -16,6 +16,7 @@ import StickyFooter from "@/components/StickyFooter";
 import MobileMenu from "@/components/MobileMenu";
 import CampaignSection from "@/components/CampaignSection";
 import NextEventSection from "@/components/NextEventSection";
+import PastEventsSection from "@/components/PastEventsSection";
 // ▼ 修正: SakuraParticles のインポートを削除しました
 
 const Index = () => {
@@ -158,6 +159,7 @@ const Index = () => {
           <div id="campaign"><CampaignSection /></div>
           <div id="overview"><OverviewSection /></div>
           <NextEventSection />
+          <div id="past-events"><PastEventsSection /></div>
           <div id="voice"><VoiceSection /></div>
           <div id="faq"><FAQSection /></div>
 
