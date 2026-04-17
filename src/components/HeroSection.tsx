@@ -12,7 +12,7 @@ const images = [
 
 // ▼▼▼ 6月LP用：下部に表示するテキストリスト ▼▼▼
 const otherCompanies = [
-   "損害保険ジャパン","残り枠数社Coming Soon..."
+   "タワーパートナーズセミコンダクター","ダイヘン", "残り枠1社Coming Soon..."
 ];
 // ▲▲▲ 追加ここまで ▲▲▲
 
@@ -69,22 +69,9 @@ const HeroSection = () => {
           <div className="mt-4 md:mt-6 flex flex-col items-center w-full animate-in fade-in zoom-in duration-1000 delay-400">
              <p className="text-base md:text-xl font-serif font-bold text-[#0B1E46] tracking-wide leading-tight drop-shadow-sm flex flex-wrap items-baseline justify-center gap-1">
                 {/* ▼ 修正：アクセント色をゴールド（#B8860B）に戻しました ▼ */}
-                <span className="text-[#B8860B] text-lg md:text-2xl mx-1">最難関企業</span>
+                <span className="text-[#B8860B] text-lg md:text-2xl mx-1">超有名企業</span>
                 <span>参加決定</span>
              </p>
-
-             {/* ▼▼▼ PwC戦略部門の強烈アピールテキスト（ここだけは目立たせるために赤を残しています） ▼▼▼ */}
-             <div className="mt-3 md:mt-4 inline-flex flex-col items-center bg-gradient-to-br from-white to-red-50 border border-[#DC143C]/30 px-5 md:px-8 py-3 md:py-4 rounded-xl shadow-md relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-[#DC143C]/10 to-transparent rounded-bl-full z-0 pointer-events-none"></div>
-                <div className="absolute bottom-0 left-0 w-12 h-12 bg-gradient-to-tr from-[#DC143C]/5 to-transparent rounded-tr-full z-0 pointer-events-none"></div>
-                
-                <p className="relative z-10 text-[11px] md:text-sm font-bold text-slate-500 mb-1.5 tracking-wider">
-                  ＼ 少数精鋭のトップ学生が挑む、超難関企業 ／
-                </p>
-                <p className="relative z-10 text-[13px] md:text-lg font-bold text-[#0B1E46] leading-relaxed">
-                  <span className="text-[#fd5109] font-black text-lg md:text-2xl tracking-wide mx-1">PwC Strategy&</span><span className="text-xs md:text-sm">（戦略コンサル部門）</span>
-                </p>
-             </div>
           </div>
         </div>
 
