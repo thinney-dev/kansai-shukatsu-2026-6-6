@@ -100,7 +100,7 @@ const MobileMenu = () => {
           <div className="mt-8 pb-8 space-y-4">
             <button
                 // ▼▼▼ リンク修正 ▼▼▼
-                onClick={() => window.open('https://forms.gle/jzx3YRtbvogsjdt36', '_blank')}
+                onClick={() => window.open('https://forms.gle/smfKD4PBjqhHRSv29', '_blank')}
                 className="w-full bg-purple-600 text-white font-bold py-4 rounded-lg shadow-md active:scale-95 transition-transform"
             >
                 ENTRYはこちら

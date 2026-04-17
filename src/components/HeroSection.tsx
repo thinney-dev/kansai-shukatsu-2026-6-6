@@ -51,7 +51,7 @@ const HeroSection = () => {
                 {/* ▼ 修正：アイコン色をゴールド（#B8860B）に戻しました ▼ */}
                 <CalendarClock className="w-6 h-6 md:w-8 md:h-8 text-[#B8860B] drop-shadow-sm" />
                 <span className="text-2xl md:text-3xl font-serif font-bold text-[#0B1E46] tracking-widest drop-shadow-sm">
-                   6/17<span className="text-lg md:text-xl mx-1 text-[#0B1E46] opacity-80">(水)</span>13:00~
+                   6/6<span className="text-lg md:text-xl mx-1 text-[#0B1E46] opacity-80">(土)</span>14:15~
                 </span>
              </div>
           </div>
@@ -61,7 +61,7 @@ const HeroSection = () => {
                 {/* ▼ 修正：アイコン色をゴールド（#B8860B）に戻しました ▼ */}
                 <MapPin className="w-5 h-5 md:w-6 md:h-6 text-[#B8860B] drop-shadow-sm" />
                 <span className="text-lg md:text-xl font-serif font-bold text-[#0B1E46] tracking-wider drop-shadow-sm">
-                グランフロント大阪（予定）
+                グランフロント大阪
                 </span>
              </div>
           </div>
@@ -151,7 +151,7 @@ const HeroSection = () => {
                </div>
                <div className="text-left">
                   <p className="text-[9px] text-slate-400 font-bold tracking-widest uppercase">LIMIT</p>
-                  <p className="text-sm font-bold text-[#0B1E46]">50名限定</p>
+                  <p className="text-sm font-bold text-[#0B1E46]">30名限定</p>
                </div>
             </div>
 

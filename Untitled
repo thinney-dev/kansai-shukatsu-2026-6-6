@@ -1,6 +1,6 @@
-# 関西就活 2026/06/17 公式サイト
+# 関西就活 2026/06/6 公式サイト
 
-2026年6月17日(水)に開催されるキャリアイベントのランディングページです。
+2026年6月6日(土)に開催されるキャリアイベントのランディングページです。
 
 ## 開発環境
 - React
@@ -9,8 +9,8 @@
 - Tailwind CSS
 
 ## デプロイ先
-GitHub: https://github.com/thinney-dev/kansai-shukatsu-2026-6-17
-Cloudflare Pages: https://kansai-shukatsu-2026-6-17.pages.dev
+GitHub: https://github.com/thinney-dev/kansai-shukatsu-2026-6-6
+Cloudflare Pages: https://kansai-shukatsu-2026-6-6.pages.dev
 
 ## 開発者
 - SF
