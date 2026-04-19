@@ -161,7 +161,7 @@ const HeroSection = () => {
                  </div>
                  <div className="text-left">
                     <p className="text-[9px] text-slate-400 font-bold tracking-widest uppercase">TARGET</p>
-                    <p className="text-sm font-bold text-[#0B1E46]">京大・阪大・神大・海外大・<br />国公立大学院・海外大学院の28卒生</p>
+                    <p className="text-sm font-bold text-[#0B1E46]">関関同立・国公立の28卒生</p>
                  </div>
               </div>
             </div>
