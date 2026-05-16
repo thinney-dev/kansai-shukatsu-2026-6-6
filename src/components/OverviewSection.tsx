@@ -45,6 +45,7 @@ const OverviewSection = () => {
       label: "参加対象",
       content: (
         <ul className="list-disc list-outside pl-4 space-y-2">
+           <li>理系学生</li>
           <li>国公立・海外大・関関同立・国公立大学院・海外大学院に通う学生</li>
           <li>2027年4月から2028年3月に大学・大学院を卒業または卒業見込みの方</li>
           <li>

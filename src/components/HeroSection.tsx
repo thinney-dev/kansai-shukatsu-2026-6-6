@@ -46,15 +46,48 @@ const HeroSection = () => {
             </p>
           </div>
 
-          <div className="mt-10 md:mt-16 flex justify-center w-full animate-in fade-in zoom-in duration-1000 delay-200">
-             <div className="inline-flex items-center gap-2 md:gap-3">
-                {/* ▼ 修正：アイコン色をゴールド（#B8860B）に戻しました ▼ */}
-                <CalendarClock className="w-6 h-6 md:w-8 md:h-8 text-[#B8860B] drop-shadow-sm" />
-                <span className="text-2xl md:text-3xl font-serif font-bold text-[#0B1E46] tracking-widest drop-shadow-sm">
-                   6/6<span className="text-lg md:text-xl mx-1 text-[#0B1E46] opacity-80">(土)</span>14:15~
-                </span>
-             </div>
-          </div>
+          {/* ▼▼▼ 差し替え：理系バッジ＋日付・場所ブロック ▼▼▼ */}
+<div className="relative mt-10 md:mt-16 flex flex-col items-center w-full animate-in fade-in zoom-in duration-1000 delay-200">
+
+{/* 理系限定ギザギザバッジ */}
+<div className="absolute -left-2 md:left-[1%] -top-6 z-10">
+  <div className="relative flex items-center justify-center w-16 h-16">
+    {/* ギザギザ背景をSVGで描画 */}
+    <svg viewBox="0 0 100 100" className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
+      <polygon
+        points="50,2 61,20 80,12 80,32 100,35 88,52 100,68 80,70 80,88 61,80 50,98 39,80 20,88 20,70 0,68 12,52 0,35 20,32 20,12 39,20"
+        fill="#7C3AED"
+      />
+    </svg>
+    {/* バッジテキスト */}
+    <span className="relative z-10 text-white font-black text-[10px] leading-tight text-center">
+      理系<br />限定
+    </span>
+  </div>
+</div>
+
+{/* 日付 */}
+<div className="flex justify-center w-full">
+  <div className="inline-flex items-center gap-2 md:gap-3">
+    <CalendarClock className="w-6 h-6 md:w-8 md:h-8 text-[#B8860B] drop-shadow-sm" />
+    <span className="text-2xl md:text-3xl font-serif font-bold text-[#0B1E46] tracking-widest drop-shadow-sm">
+      6/6<span className="text-lg md:text-xl mx-1 text-[#0B1E46] opacity-80">(土)</span>14:00~
+    </span>
+  </div>
+</div>
+
+{/* 場所 */}
+<div className="mt-2 flex justify-center w-full">
+  <div className="inline-flex items-center gap-2">
+    <MapPin className="w-5 h-5 md:w-6 md:h-6 text-[#B8860B] drop-shadow-sm" />
+    <span className="text-lg md:text-xl font-serif font-bold text-[#0B1E46] tracking-wider drop-shadow-sm">
+      グランフロント大阪
+    </span>
+  </div>
+</div>
+
+</div>
+{/* ▲▲▲ 差し替えここまで ▲▲▲ */}
 
           <div className="mt-2 flex justify-center w-full animate-in fade-in zoom-in duration-1000 delay-300">
              <div className="inline-flex items-center gap-2">
@@ -161,7 +194,7 @@ const HeroSection = () => {
                  </div>
                  <div className="text-left">
                     <p className="text-[9px] text-slate-400 font-bold tracking-widest uppercase">TARGET</p>
-                    <p className="text-sm font-bold text-[#0B1E46]">関関同立・国公立の28卒生</p>
+                    <p className="text-sm font-bold text-[#0B1E46]">関関同立・国公立の28卒『理系』学生</p>
                  </div>
               </div>
             </div>
