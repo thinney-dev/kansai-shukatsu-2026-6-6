@@ -89,16 +89,6 @@ const HeroSection = () => {
 </div>
 {/* ▲▲▲ 差し替えここまで ▲▲▲ */}
 
-          <div className="mt-2 flex justify-center w-full animate-in fade-in zoom-in duration-1000 delay-300">
-             <div className="inline-flex items-center gap-2">
-                {/* ▼ 修正：アイコン色をゴールド（#B8860B）に戻しました ▼ */}
-                <MapPin className="w-5 h-5 md:w-6 md:h-6 text-[#B8860B] drop-shadow-sm" />
-                <span className="text-lg md:text-xl font-serif font-bold text-[#0B1E46] tracking-wider drop-shadow-sm">
-                グランフロント大阪
-                </span>
-             </div>
-          </div>
-
           <div className="mt-4 md:mt-6 flex flex-col items-center w-full animate-in fade-in zoom-in duration-1000 delay-400">
              <p className="text-base md:text-xl font-serif font-bold text-[#0B1E46] tracking-wide leading-tight drop-shadow-sm flex flex-wrap items-baseline justify-center gap-1">
                 {/* ▼ 修正：アクセント色をゴールド（#B8860B）に戻しました ▼ */}
