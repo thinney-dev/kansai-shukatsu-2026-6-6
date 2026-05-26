@@ -49,10 +49,7 @@ const TimetableSection = () => {
             
             {/* 第1部 */}
             <div>
-                <div className="flex items-center gap-3 mb-4 pl-1">
-                    <div className="w-1 h-6 bg-[#B8860B]"></div>
-                    <h3 className="text-lg font-serif font-bold text-[#0B1E46]">第１部</h3>
-                </div>
+                
 
                 <div className="flex flex-col border border-slate-200 rounded-xl overflow-hidden shadow-sm">
                     {schedule.map((item, index) => (
