@@ -16,9 +16,9 @@ const OverviewSection = () => {
       content: (
         <div className="space-y-4">
           <div>
-            <p className="font-bold mb-1">グランフロント大阪北館タワー10階　Room C05</p>
+            <p className="font-bold mb-1">グランフロント大阪北館タワーC8階　Room C05</p>
             <p className="text-sm text-slate-500">
-              〒530-0013 大阪府大阪市北区梅田3-2-1 グランフロント大阪北館タワーC10階　Room C05
+              〒530-0013 大阪府大阪市北区梅田3-2-1 グランフロント大阪北館タワーC8階　Room C05
             </p>
             <p className="text-xs text-[#B8860B] mt-1 flex items-center gap-1 font-bold">
               <MapPin className="w-3 h-3" />
