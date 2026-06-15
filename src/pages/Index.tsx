@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { ArrowRight, ExternalLink } from "lucide-react";
+import { ArrowRight, ExternalLink, ChevronRight } from "lucide-react"; // 👈 ChevronRightを追加
 import { Button } from "@/components/ui/button";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
@@ -17,7 +17,6 @@ import MobileMenu from "@/components/MobileMenu";
 import CampaignSection from "@/components/CampaignSection";
 import NextEventSection from "@/components/NextEventSection";
 import PastEventsSection from "@/components/PastEventsSection";
-// ▼ 修正: SakuraParticles のインポートを削除しました
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("top");
@@ -97,8 +96,6 @@ const Index = () => {
           backgroundPosition: 'center',
         }}
       ></div>
-
-      {/* ▼ 修正: ここにあった <SakuraParticles /> の呼び出しをまるごと削除しました ▼ */}
 
       {/* 左カラム（PC専用） */}
       <aside className="hidden lg:flex flex-1 min-w-0 sticky top-0 h-screen flex-col justify-center items-center z-10 px-6">
@@ -219,15 +216,14 @@ const Index = () => {
             </nav>
 
             <div className="space-y-3 pt-4">
-                <Button 
-                    className="w-full bg-purple-600 hover:bg-purple-500 text-white font-bold h-14 rounded shadow-lg transition-transform hover:scale-105 text-lg"
-                    // ▼▼▼ リンク修正 ▼▼▼
-                    onClick={() => window.open('https://forms.gle/smfKD4PBjqhHRSv29', '_blank')}
-                >
-                    <span className="bg-white text-purple-600 text-xs px-2 py-0.5 rounded font-bold mr-3">簡単1分</span>
-                    ENTRYはこちら
-                    <ExternalLink className="ml-2 w-5 h-5" />
-                </Button>
+                {/* ▼ 修正：募集終了のデザインに変更 ▼ */}
+                <div className="w-full bg-[#4a4a4a] text-white font-bold h-14 rounded shadow-lg flex items-center justify-between px-4 cursor-not-allowed">
+                    <div className="flex items-center gap-3">
+                      <span className="bg-white text-[#333333] text-xs px-2 py-1 font-bold">満員御礼</span>
+                      <span className="text-lg tracking-widest">募集終了</span>
+                    </div>
+                    <ChevronRight className="w-6 h-6 text-white" />
+                </div>
 
                 <Button 
                     variant="outline"
